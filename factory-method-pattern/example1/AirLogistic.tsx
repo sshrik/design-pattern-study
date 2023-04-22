@@ -1,7 +1,7 @@
 import Logistic from 'factory-method-pattern/example1';
 import AirLine from 'factory-method-pattern/example1/products/AirLine';
 
-export default class RoadLogistic implements Logistic {
+export default class AirLogistic implements Logistic {
   airLineId: number;
 
   constructor() {
