@@ -1,4 +1,5 @@
 import Logistic from 'factory-method-pattern/example1';
+import Transport from 'factory-method-pattern/example1/products';
 import Truck from 'factory-method-pattern/example1/products/Truck';
 
 export default class RoadLogistic implements Logistic {
@@ -16,7 +17,7 @@ export default class RoadLogistic implements Logistic {
     return schedule;
   }
 
-  createTransport() {
+  createTransport(): Transport {
     this.truckId += 1;
 
     return new Truck(this.truckId);
