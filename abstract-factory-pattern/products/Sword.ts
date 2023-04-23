@@ -1,6 +1,6 @@
-import Items, { ItemAbility } from 'abstract-factory-pattern/products';
+import Item, { ItemAbility } from 'abstract-factory-pattern/products';
 
-export default class Sword implements Items {
+export default class Sword implements Item {
   readonly name: string;
 
   readonly damage: number;

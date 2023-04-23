@@ -1,4 +1,4 @@
-export default interface Items {
+export default interface Item {
   name: string;
   damage: number;
   defense: number;

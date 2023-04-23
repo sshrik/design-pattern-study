@@ -1,7 +1,7 @@
-import Items from 'abstract-factory-pattern/products';
+import Item from 'abstract-factory-pattern/products';
 
 export default interface CompanyFactory {
-  createSword(): Items;
-  createBow(): Items;
-  createShield(): Items;
+  createSword: () => Item;
+  createBow: () => Item;
+  createShield: () => Item;
 }
